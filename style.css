@@ -159,7 +159,6 @@ color: #bb8f00;
   transition-delay: 0s;
   transition: opacity .8s,transform .6s ease-in-out;
 }
-.box2{order: 0;} 
 .text{
   width: 100%;
 text-align: center;
@@ -262,7 +261,33 @@ button{
     font-size: 16px;
     
   }
- 
+  h1{
+    font-size: 45px;  
+  }
+ .logo{
+  width: 240px;
+  right: 0px;
+  top: -72px;
+ }
+ .box{
+  width: 100%;
+  background-color: #204e23;
+  border: 2px solid rgb(26, 26, 26);
+  border-radius: 50px;
+  margin-bottom: 10px;
+
+
+  
+}
+
+
+/* .pict img{
+
+border-radius: 5%;
+width: 100%;
+height: auto;} */
+
+
 }
 
 /* スタイルsheetのリンクがGITHUBのリンクになっていたため、mediaクエリが反応しなｋった。style.cssに戻せば反映される
