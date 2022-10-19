@@ -11,11 +11,7 @@ padding: 20px;
 /* flex-direction: column;
 height: 100%; */
 }
-footer{
-  background-color: #887a00;
-  /* margin:200px 0; */
 
-}
 
 p{margin: 2rem;}
 a{color: whitesmoke;}
@@ -234,11 +230,18 @@ button{
   padding: 10px;
   background-color: rgba(255, 250, 250, 0.781);}
 
+  footer{
+    background-color: #887a00;
+    
+    /* margin:200px 0; */
+  }
+  
   footer .container ul li {
     list-style: none;
     font-size: 55px;
     margin: 0 10px;
     width: 55px;
+ 
   }
   footer .container ul {
     
@@ -254,10 +257,12 @@ button{
  */
 
 
-@media (max-width:500px){
+@media (max-width:700px){
+
 
   header{
-    height: 100px;
+    height: 125px;
+    width: auto;
     font-size: 16px;
     
   }
@@ -265,22 +270,94 @@ button{
     font-size: 45px;  
   }
  .logo{
-  width: 240px;
-  right: 0px;
-  top: -72px;
+  width: 230px;
+  right: -10px;
+  top: -68px;
+  position:absolute;
+  display: inline-block;
+
  }
+ /* body{outline: 2px solid red;} */
  .box{
   width: 100%;
   background-color: #204e23;
   border: 2px solid rgb(26, 26, 26);
   border-radius: 50px;
   margin-bottom: 10px;
-
-
-  
 }
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 20px;
+  box-sizing: border-box}
+  footer{
+    width: 100%;
+    border-radius: 60px;
+    position: absolute;
+    bottom: 0;
+  }
+  footer .container{
+    font-size: 0.3em;
 
+  }
+  
+  footer .container ul li {
+    font-size: 30px;
+    margin: 0 0px;
+    width: 100px;
+  }
+  footer .container ul {
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
+  }
+
+  nav{
+    border-bottom: 5px solid #ccc;
+    position: relative;
+  }
+  nav ul{
+    position: absolute;
+    left: 8px;
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+    /* outline: 1px solid green; */
+
+   
+  }
+  nav ul li{
+    display: table-cell;
+    min-width: 20px;
+    /* outline: 1px solid blue; */
+    
+    
+  }
+  nav ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: rgb(80, 45, 17);
+    font-size: 15px;
+    text-align: center;
+    /* outline: 1px solid red; */
+    
+  }
+  nav ul li a,a,a,a {
+    padding: 0 5px;
+  }
+
+    
+  
+ 
+    }
+  
 /* .pict img{
 
 border-radius: 5%;
@@ -288,7 +365,7 @@ width: 100%;
 height: auto;} */
 
 
-}
+
 
 /* スタイルsheetのリンクがGITHUBのリンクになっていたため、mediaクエリが反応しなｋった。style.cssに戻せば反映される
  */
