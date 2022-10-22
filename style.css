@@ -123,6 +123,7 @@ nav ul li:hover{
   flex-direction: column;
   margin-bottom: 20px;
   vertical-align: bottom;
+  /* outline: red 2px solid; */
   
 }
 /* .box ::after{
@@ -192,15 +193,17 @@ vertical-align:top; */
 
 
 
-main > :nth-child(odd){background: #0d4417;}
-main > :nth-child(even){background: #76a87e;}
 
 main{
   display: flex ;
   flex: 1;
   justify-content: space-between;
-  flex-wrap: wrap;}
+  flex-wrap: wrap;
+  /* outline: solid 2px blue; */
+}
 
+main > :nth-child(odd){background: #0d4417;}
+main > :nth-child(even){background: #76a87e;}
 
 
 p#san {background-color: rgb(86, 123, 202);}
@@ -264,7 +267,7 @@ button{
     height: 125px;
     width: auto;
     font-size: 16px;
-    
+    /* outline: 2px solid red; */
   }
   h1{
     font-size: 45px;  
@@ -277,24 +280,32 @@ button{
   display: inline-block;
 
  }
- /* body{outline: 2px solid red;} */
+
+
+  p{
+    margin: rem;
+
+  }
  .box{
   width: 100%;
   background-color: #204e23;
   border: 2px solid rgb(26, 26, 26);
   border-radius: 50px;
   margin-bottom: 10px;
+
 }
 .wrapper{
   min-height: 100vh;
-  position: relative;
+  /* position: relative; */
   padding-bottom: 20px;
   box-sizing: border-box}
+
   footer{
     width: 100%;
     border-radius: 60px;
-    position: absolute;
     bottom: 0;
+    /* outline: 2px solid red; */
+
   }
   footer .container{
     font-size: 0.3em;
@@ -333,7 +344,7 @@ button{
   nav ul li{
     display: table-cell;
     min-width: 20px;
-    /* outline: 1px solid blue; */
+ /* outline: 1px solid blue;  */
     
     
   }
@@ -353,10 +364,14 @@ button{
     padding: 0 5px;
   }
 
+  #content {
+    width: 20em;
     
-  
- 
-    }
+
+  } 
+  table{
+    width: 300px;
+    } 
   
 /* .pict img{
 
@@ -365,7 +380,3 @@ width: 100%;
 height: auto;} */
 
 
-
-
-/* スタイルsheetのリンクがGITHUBのリンクになっていたため、mediaクエリが反応しなｋった。style.cssに戻せば反映される
- */
